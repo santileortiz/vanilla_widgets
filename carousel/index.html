@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reusable Image Carousel</title>
+	<!-- Link to the external CSS file -->
+	<link rel="stylesheet" href="carousel.css">
+	<style>
+		:root {
+			--carousel-max-width: 300px;
+		}
+
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+			flex-direction: column;
+		}
+	</style>
+</head>
+<body>
+	<script src="carousel.js"></script>
+
+	<!-- First Carousel -->
+	<div class="carousel">
+		<img src="https://picsum.photos/id/25/100/200" alt="Image 1">
+		<img src="https://picsum.photos/id/19/1000/300" alt="Image 2">
+		<img src="https://picsum.photos/id/17/20/50" alt="Image 3">
+	</div>
+
+	<!-- Second Carousel -->
+	<div class="carousel">
+		<img src="https://picsum.photos/id/1018/1000/600/" alt="Image A">
+		<img src="https://picsum.photos/id/1015/1000/1000/" alt="Image B">
+		<img src="https://picsum.photos/id/1019/1000/600/" alt="Image C">
+		<img src="https://picsum.photos/id/1011/600/1000/" alt="Image C">
+	</div>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			carousel_init_in (document);
+		});
+	</script>
+</body>
+</html>
